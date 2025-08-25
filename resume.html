@@ -14,7 +14,19 @@
 
     <!-- 개인정보 -->
     <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">개인정보</h2>
+      <!-- 1️⃣ 섹션 제목 강조 (원본에 border-b, 색상 추가) -->
+      <h2 class="text-xl font-semibold mb-4 border-b border-gray-300 pb-1 text-gray-800">개인정보</h2>
+     
+      <!-- 2️⃣ 학력 필드 동적 추가 -->
+      <div id="education-list" class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <input type="text" placeholder="학교명" class="border rounded-lg p-2 focus:ring focus:ring-blue-300">
+          <input type="text" placeholder="전공" class="border rounded-lg p-2 focus:ring focus:ring-blue-300">
+          <input type="text" placeholder="졸업년도" class="border rounded-lg p-2 focus:ring focus:ring-blue-300">
+        </div>
+      </div>
+      
+      
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label class="block text-gray-700 mb-2">이름</label>
